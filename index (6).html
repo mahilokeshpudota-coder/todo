@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semantic Todo App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>📝 My Todo App</h1>
+</header>
+
+<main>
+  <!-- INPUT SECTION - FLEX -->
+  <section class="add-todo-section">
+    <h2>Add New Task</h2>
+    <form id="todoForm" class="flex-form">
+      <input type="text" id="todoInput" placeholder="Enter task..." required>
+      <button type="submit">Add</button>
+    </form>
+  </section>
+
+  <!-- TODO LIST SECTION - GRID -->
+  <section class="todo-list-section">
+    <h2>Your Tasks</h2>
+    <div id="todoGrid" class="grid-container">
+      <!-- JS will add todo cards here -->
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Todo App | Tasks saved in browser</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
